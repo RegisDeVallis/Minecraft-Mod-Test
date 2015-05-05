@@ -1,0 +1,3 @@
+C:\Users\Dalen\Documents\GitHub\Minecraft-Mod-Test\Minecraft-Mod-Test\bin\mods\Minecraft-Mod-Test.jar
+C:\Users\Dalen\Documents\GitHub\Minecraft-Mod-Test\Minecraft-Mod-Test\obj\DebugClient\com\example\examplemod\ExampleMod.class
+C:\Users\Dalen\Documents\GitHub\Minecraft-Mod-Test\Minecraft-Mod-Test\obj\DebugClient\Minecraft-Mod-Test.jar
