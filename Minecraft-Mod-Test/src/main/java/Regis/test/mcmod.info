@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Minecraft-Mod-Test",
+  "name": "Test Mod",
+  "description": "Just a test mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [""],
+  "credits": "Copyright ©  2015",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
