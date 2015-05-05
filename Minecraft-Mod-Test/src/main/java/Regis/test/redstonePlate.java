@@ -19,7 +19,11 @@ public class redstonePlate extends Block {
     public redstonePlate (Material material) {
     
     super(material);
-    this.setHarvestLevel("pickaxe", 1);
+    setHarvestLevel("pickaxe", 1);
+    setHardness(0.5F);
+    setStepSound(Block.soundTypeStone);
+    setBlockName("Redstone Plate");
+    setCreativeTab(CreativeTabs.tabRedstone);
     
    
     

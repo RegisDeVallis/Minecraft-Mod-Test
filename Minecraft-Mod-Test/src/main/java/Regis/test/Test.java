@@ -4,6 +4,7 @@ package Regis.test;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -15,6 +16,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+   
 
 
 @Mod(modid=Test.MODID, name=Test.MODNAME, version=Test.MODVER) //Tell forge "Oh hey, there's a new mod here to load."
@@ -30,16 +32,18 @@ public class Test //Start the class Declaration
     @Instance(value = Test.MODID) //Tell Forge what instance to use.
     public static Test instance;
     
+    
+        //public static CommonProxy proxy;
+    
     //my stuff
     public static Block redstonePlate;
         
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        Block redstonePlate = new redstonePlate(Material.ground)
-            .setHardness(0.5F).setStepSound(Block.soundTypeStone)
-            .setBlockName("Redstone Plate").setCreativeTab(CreativeTabs.tabRedstone);
-        GameRegistry.registerBlock(redstonePlate, "Redstone Plate");
+        Block redstonePlate = new redstonePlate(Material.rock);
+            
+        GameRegistry.registerBlock(redstonePlate, "redstonePlate");
         
         
     }
@@ -48,15 +52,15 @@ public class Test //Start the class Declaration
     public void load(FMLInitializationEvent event)
     {
         
-        ItemStack redstonePlateStack = new ItemStack(Blocks.redstonePlate);
+        ItemStack redstonePlateStack = new ItemStack(redstonePlate);
         ItemStack redstoneStack = new ItemStack(Blocks.redstone_wire);
         ItemStack ironIngotStack = new ItemStack(Items.iron_ingot);
-        GameRegistry.addRecipe(
-        new ItemStack(Blocks.redstonePlate),
+        ItemStack stoneSlabStack = new ItemStack(Blocks.stone_slab);
+        GameRegistry.addRecipe(new ItemStack(redstonePlate),
         "xyx",
         "yzy",
         "xyx",
-        'x', ironIngotStack, 'y', redstoneStack);
+        'x', ironIngotStack, 'y', redstoneStack, 'z', stoneSlabStack);
         
     }
         
