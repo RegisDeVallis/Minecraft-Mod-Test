@@ -1,8 +1,8 @@
 [
 {
   "modid": "Minecraft-Mod-Test",
-  "name": "Te Mod",
-  "description": "Example placeholder mod.",
+  "name": "Test Mod",
+  "description": "Just a test mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
